@@ -12,4 +12,4 @@ SUM(CASE action_type WHEN '0' THEN 1 ELSE 0 END) AS 'click',
 SUM(CASE action_type WHEN '1' THEN 1 ELSE 0 END) AS 'add_to_cart',
 SUM(CASE action_type WHEN '2' THEN 1 ELSE 0 END) AS 'purchase',
 SUM(CASE action_type WHEN '3' THEN 1 ELSE 0 END) AS 'add_to_favourite',
-label FROM ly.new_table GROUP BY user_id,merchant_id,action_type;
+label FROM repeatbuyers.new_table GROUP BY user_id,merchant_id,action_type;
